@@ -26,11 +26,11 @@ export default function Features() {
             </div>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-black">
+          <h2 className="text-3xl sm:text-4xl md:text-[42px] font-extrabold text-center text-black">
             Advanced Features
           </h2>
 
-          <p className="mt-4 text-center text-[#444] text-base sm:text-lg md:text-xl max-w-3xl mx-auto">
+          <p className="mt-4 text-center text-[#444] text-base sm:text-lg md:text-[18px] max-w-3xl mx-auto">
             Powerful tools that help you design stunning invitations and
             greetings faster, smarter, and effortlessly.
           </p>

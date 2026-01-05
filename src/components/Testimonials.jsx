@@ -77,7 +77,7 @@ export default function Testimonials() {
         </div>
 
         {/* Title */}
-        <h2 className="text-center text-[36px] md:text-[52px] font-bold md:font-extrabold text-black">
+        <h2 className="text-center text-[36px] md:text-[42px] font-bold md:font-extrabold text-black">
           What People Say About Us!
         </h2>
 
@@ -108,7 +108,7 @@ export default function Testimonials() {
                       className="absolute top-8 left-6"
                     />
 
-                    <p className="mt-12 text-[#666] text-[15.5px] leading-relaxed">
+                    <p className="mt-12 text-[#666] text-[16px] leading-relaxed">
                       {r.text}
                     </p>
 

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Contact() {
   return (
-    <section className="bg-white py-10 md:py-16">
+    <section id="contactus" className="bg-white py-10 md:py-16">
       <div className="MyContainer grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-20 items-start">
         {/* RIGHT CONTENT */}
         <div className="order-1 lg:order-2">
@@ -37,7 +37,9 @@ export default function Contact() {
                 width={20}
                 height={20}
               />
-              <span className="max-w-full sm:max-w-sm">hello@devsrank.com</span>
+              <span className="max-w-full sm:max-w-sm text-[16px] md:text-[18px]">
+                hello@devsrank.com
+              </span>
             </div>
 
             <div className="flex items-start gap-3 sm:gap-5">
@@ -47,7 +49,7 @@ export default function Contact() {
                 width={22}
                 height={22}
               />
-              <span className="max-w-full sm:max-w-sm">
+              <span className="max-w-full sm:max-w-lg text-[16px] md:text-[18px]">
                 Office #112, 2nd Floor Kohinoor Plaza 1, Faisalabad, Punjab,
                 Pakistan
               </span>
@@ -60,7 +62,9 @@ export default function Contact() {
                 width={20}
                 height={20}
               />
-              <span className="max-w-full sm:max-w-sm">+92 (300) 1234 968</span>
+              <span className="max-w-full sm:max-w-sm text-[16px] md:text-[18px]">
+                +92 (300) 1234 968
+              </span>
             </div>
           </div>
         </div>
@@ -73,7 +77,7 @@ export default function Contact() {
           <Input placeholder="What's your interests" />
           <Textarea placeholder="Message" />
 
-          <button className=" w-full sm:w-auto bg-gradient-to-r from-[#9B1FFF] to-[#FF6B81] text-white px-6 sm:px-8 py-3 rounded-full font-semibold">
+          <button className="w-full sm:w-auto bg-gradient-to-r from-[#9B1FFF] to-[#FF6B81] text-white px-6 sm:px-8 py-3 rounded-full font-semibold transition-all duration-300 ease-out hover:scale-[1.05] active:scale-[0.97]">
             Send Message
           </button>
         </div>

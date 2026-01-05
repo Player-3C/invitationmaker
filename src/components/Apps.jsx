@@ -32,7 +32,7 @@ export default function Apps() {
   if (!mounted) return null;
 
   return (
-    <div id="apps" className="bg-white py-6 md:pt-10 md:pb-20">
+    <div id="app" className="bg-white py-6 md:pt-10 md:pb-20">
       <section>
         <div className="MyContainer grid gap-1 md:gap-3">
           {/* Badge */}
@@ -45,11 +45,11 @@ export default function Apps() {
           </div>
 
           {/* Title */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-black">
+          <h2 className="text-3xl sm:text-4xl md:text-[42px] font-extrabold text-center text-black">
             Discover Everything in Invitation Maker
           </h2>
 
-          <p className="mt-4 text-center text-[#444] text-base sm:text-lg md:text-xl max-w-3xl mx-auto">
+          <p className="mt-4 text-center text-[#444] text-base sm:text-lg md:text-[18px] max-w-3xl mx-auto">
             Explore beautiful invitation and greeting designs and creative ideas
             that spark inspiration and bring every occasion story to life.
           </p>

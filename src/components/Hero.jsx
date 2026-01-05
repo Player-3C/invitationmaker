@@ -41,7 +41,7 @@ export default function Hero() {
             </span>{" "}
           </h1>
 
-          <p className="mt-6 text-[#1e1e1e] text-[16px] md:text-[18px] leading-7 tracking-[0.02em] text-center md:text-left">
+          <p className="mt-6 text-[#1e1e1e] text-[18px] md:text-[20px] leading-7 tracking-[0.02em] text-center md:text-left">
             Design invitations and greetings online using smart AI tools -
             beautifully customized for every occasion.
           </p>

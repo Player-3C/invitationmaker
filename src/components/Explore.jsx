@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Explore() {
   return (
-    <div id="Explore" className="bg-[#fdf3fc] py-10 md:py-20">
+    <div id="explore" className="bg-[#fdf3fc] py-10 md:py-20">
       <section>
         <div className="MyContainer grid gap-1 md:gap-3">
           <div className="flex justify-center mb-4">
@@ -13,11 +13,11 @@ export default function Explore() {
             </div>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-black">
+          <h2 className="text-3xl sm:text-4xl md:text-[42px] font-extrabold text-center text-black">
             How Invitation Maker Works
           </h2>
 
-          <p className="mt-4 text-center text-[#1e1e1e] text-base sm:text-lg md:text-xl max-w-4xl mx-auto">
+          <p className="mt-4 text-center text-[#1e1e1e] text-base sm:text-lg md:text-[18px] max-w-4xl mx-auto">
             Transform your vision into stunning invitations with our AI-powered
             design tools in just 6 steps.
           </p>
