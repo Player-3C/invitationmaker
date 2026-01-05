@@ -1,132 +1,66 @@
-"use client";
-
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
 
-export default function Apps() {
-  const scrollRef = useRef(null);
-  const centerRef = useRef(null);
-  const [mounted, setMounted] = useState(false); // SSR-safe
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  // Scroll center card on mobile
-  const scrollToCenter = () => {
-    if (!scrollRef.current || !centerRef.current) return;
-    if (window.innerWidth >= 768) return; // only mobile
-
-    const container = scrollRef.current;
-    const centerItem = centerRef.current;
-
-    const scrollLeft =
-      centerItem.offsetLeft -
-      container.clientWidth / 1.8 +
-      centerItem.clientWidth / 2;
-
-    container.scrollTo({ left: scrollLeft, behavior: "smooth" });
-  };
-
-  // Only render the scrollable div **after mount** to prevent hydration mismatch
-  if (!mounted) return null;
-
+export default function Hero() {
   return (
-    <div id="apps" className="bg-white py-6 md:pt-10 md:pb-20">
-      <section>
-        <div className="MyContainer grid gap-1 md:gap-3">
-          {/* Badge */}
-          <div className="flex justify-center mb-4">
-            <div className="p-[1.5px] rounded-full bg-gradient-to-r from-[#A100FF] to-[#FF6B81]">
-              <span className="block px-4 py-1 text-sm rounded-full bg-[#F6D9FF] text-[#A100FF] font-medium">
-                About
-              </span>
-            </div>
-          </div>
+    <section
+      className="
+        bg-white
+        flex
+        items-start md:items-center
+        min-h-[100svh]
+      "
+    >
+      <div className="MyContainer grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center w-full">
+        {/* IMAGE */}
+        <div className="relative w-full h-[300px] md:h-[450px] order-1 md:order-2 mt-6 md:mt-0">
+          <Image
+            src="/images/hero.png"
+            alt="Invitation Maker"
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
 
-          {/* Title */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-black">
-            Discover Everything in Invitation Maker
-          </h2>
+        {/* TEXT */}
+        <div
+          className="flex flex-col justify-center items-center md:items-start order-2 md:order-1"
+          style={{
+            backgroundImage: "url('/images/hero-bg.png')",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            backgroundSize: "contain",
+          }}
+        >
+          <h1 className="text-[36px] text-center md:text-left md:text-[56px] font-extrabold leading-tight text-black">
+            Create Stunning <br />
+            Invites With
+            <br />
+            <span className="bg-gradient-to-r from-[#7A00FF] to-[#FF6B81] bg-clip-text text-transparent">
+              Invitation Maker
+            </span>{" "}
+          </h1>
 
-          <p className="mt-4 text-center text-[#444] text-base sm:text-lg md:text-xl max-w-3xl mx-auto">
-            Explore beautiful invitation and greeting designs and creative ideas
-            that spark inspiration and bring every occasion story to life.
+          <p className="mt-6 text-[#1e1e1e] text-[18px] md:text-[20px] leading-7 tracking-[0.02em] text-center md:text-left">
+            Design invitations and greetings online using smart AI tools -
+            beautifully customized for every occasion.
           </p>
 
-          {/* Store buttons */}
-          <div className="flex flex-col sm:flex-row items-center gap-4 mt-4 mx-auto w-fit">
-            <Image
-              src="/images/appstore.png"
-              alt="Download on the App Store"
-              width={180}
-              height={40}
-              className="w-[150px] md:w-[180px]"
-            />
-            <Image
-              src="/images/googleplay.png"
-              alt="Get it on Google Play"
-              width={190}
-              height={40}
-              className="w-[150px] md:w-[190px]"
-            />
-          </div>
-
-          {/* Scroll container */}
-          {/* Scroll container */}
-          <div
-            ref={scrollRef}
-            className="mt-8 md:mt-16 flex items-center gap-6 
-             overflow-x-scroll md:overflow-x-visible 
-             whitespace-nowrap md:whitespace-normal 
-             touch-pan-x scrollbar-hide
-             md:justify-center" // <-- add this line
-          >
-            <Image
-              src="/images/app-card-1.png"
-              alt="AI Invitation Card Maker"
-              width={170}
-              height={420}
-              className="shrink-0"
-            />
-
-            <Image
-              src="/images/app-card-2.png"
-              alt="Decorate Invitation Cards"
-              width={210}
-              height={420}
-              className="shrink-0"
-            />
-
-            {/* Center Card */}
-            <div ref={centerRef} className="shrink-0">
+          <div className="flex justify-center md:justify-start my-8 w-full">
+            <button className="flex items-center gap-3 px-10 py-3 rounded-full text-white shadow-lg bg-gradient-to-r from-[#7A00FF] to-[#FF6B81] text-[16px] md:text-[18px] font-medium transition-transform duration-300 ease-out hover:scale-105 hover:opacity-90">
+              {" "}
               <Image
-                src="/images/app-card-center.png"
-                alt="Auto Save and Share"
-                width={240}
-                height={500}
-                onLoad={scrollToCenter} // scroll only after image loads
+                src="/images/btnstar.png"
+                alt="Star Icon"
+                width={18}
+                height={18}
+                className="object-contain"
               />
-            </div>
-
-            <Image
-              src="/images/app-card-4.png"
-              alt="Birthday Card & Invitation"
-              width={210}
-              height={420}
-              className="shrink-0"
-            />
-
-            <Image
-              src="/images/app-card-5.png"
-              alt="Eid Card & Invitation"
-              width={170}
-              height={420}
-              className="shrink-0"
-            />
+              <span>Generate Now</span>
+            </button>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }

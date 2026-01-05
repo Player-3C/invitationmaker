@@ -32,7 +32,7 @@ export default function Apps() {
   if (!mounted) return null;
 
   return (
-    <div id="app" className="bg-white py-6 md:pt-10 md:pb-20">
+    <div id="app" className="bg-white py-6 md:pt-10 md:pb-10">
       <section>
         <div className="MyContainer grid gap-1 md:gap-3">
           {/* Badge */}
@@ -87,7 +87,7 @@ export default function Apps() {
               alt="AI Invitation Card Maker"
               width={170}
               height={420}
-              className="shrink-0 w-[220px]"
+              className="shrink-0 md:w-[170px]"
             />
 
             <Image
@@ -95,7 +95,7 @@ export default function Apps() {
               alt="Decorate Invitation Cards"
               width={210}
               height={420}
-              className="shrink-0 w-[270px]"
+              className="shrink-0 md:w-[220px]"
             />
 
             {/* Center Card */}
@@ -106,7 +106,7 @@ export default function Apps() {
                 width={240}
                 height={500}
                 onLoad={scrollToCenter} // scroll only after image loads
-                className=" w-[320px]"
+                className=" md:w-[270px]"
               />
             </div>
 
@@ -115,7 +115,7 @@ export default function Apps() {
               alt="Birthday Card & Invitation"
               width={210}
               height={420}
-              className="shrink-0 w-[270px]"
+              className="shrink-0 md:w-[220px]"
             />
 
             <Image
@@ -123,7 +123,7 @@ export default function Apps() {
               alt="Eid Card & Invitation"
               width={170}
               height={420}
-              className="shrink-0 w-[220px]"
+              className="shrink-0 md:w-[170px]"
             />
           </div>
         </div>

@@ -1,9 +1,9 @@
-import { Montserrat } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 
-const montserrat = Montserrat({
+const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["500", "600", "700"], // good replacements for semibold/bold
+  weight: ["400", "500", "700"], // regular, medium, bold
   display: "swap",
 });
 
@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} bg-[#FFF1EE]`}>
+      <body className={`${roboto.className} bg-[#FFF1EE]`}>
         {children}
       </body>
     </html>

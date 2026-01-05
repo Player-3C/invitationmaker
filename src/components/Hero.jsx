@@ -10,9 +10,9 @@ export default function Hero() {
         min-h-[100svh]
       "
     >
-      <div className="MyContainer grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center w-full">
+      <div className="MyContainer grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-0 items-center">
         {/* IMAGE */}
-        <div className="relative w-full h-[300px] md:h-[600px] order-1 md:order-2 mt-6 md:mt-0">
+        <div className="relative w-full h-[300px] md:h-full order-1 md:order-2 mt-6 md:mt-0">
           <Image
             src="/images/hero.png"
             alt="Invitation Maker"
@@ -32,7 +32,7 @@ export default function Hero() {
             backgroundSize: "contain",
           }}
         >
-          <h1 className="text-[36px] text-center md:text-left md:text-[48px] font-extrabold leading-tight text-black">
+          <h1 className="text-[36px] text-center md:text-left md:text-[75px] font-extrabold leading-tight text-black">
             Create Stunning <br />
             Invites With
             <br />
@@ -41,7 +41,7 @@ export default function Hero() {
             </span>{" "}
           </h1>
 
-          <p className="mt-6 text-[#1e1e1e] text-[18px] md:text-[20px] leading-7 tracking-[0.02em] text-center md:text-left">
+          <p className="mt-6 text-[#1e1e1e] text-[18px] md:text-[24px] max-w-lg leading-10 tracking-[0.02em] text-center md:text-left">
             Design invitations and greetings online using smart AI tools -
             beautifully customized for every occasion.
           </p>

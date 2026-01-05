@@ -15,9 +15,9 @@ export default function Navbar() {
           <Image
             src="/images/logo.png"
             alt="Logo"
-            width={150}
-            height={150}
-            className="lg:h-[50px] lg:w-[60px] md:h-[35px] md:w-[35px]"
+            width={100}
+            height={100}
+            className="h-[9vh] w-[11vh]"
           />
           {/* <h2 className="hidden md:block font-bold bg-gradient-to-r from-[#7A00FF] to-[#FF6B81] bg-clip-text text-transparent text-[22px] whitespace-nowrap">
             Invitation Maker
@@ -46,7 +46,7 @@ export default function Navbar() {
               alt="Download on the App Store"
               width={100}
               height={40}
-              className="md:w-[150px]"
+              className="w-[20vh]"
             />
           </div>
         </div>

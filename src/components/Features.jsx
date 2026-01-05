@@ -20,8 +20,10 @@ export default function Features() {
         <div className="MyContainer grid gap-1 md:gap-3">
           <div className="flex justify-center mb-4">
             <div className="p-[1.5px] rounded-full bg-gradient-to-r from-[#A100FF] to-[#FF6B81]">
-              <span className="block px-4 py-1 text-sm rounded-full bg-[#F6D9FF] text-[#A100FF] font-medium">
-                Powerful Features
+              <span className="block px-4 py-1 text-sm rounded-full bg-[#F6D9FF] font-medium">
+                <span className="bg-gradient-to-r from-[#7A00FF] to-[#FF6B81] bg-clip-text text-transparent">
+                  Powerful Features
+                </span>
               </span>
             </div>
           </div>
@@ -30,7 +32,7 @@ export default function Features() {
             Advanced Features
           </h2>
 
-          <p className="mt-4 text-center text-[#444] text-base sm:text-lg md:text-[18px] max-w-3xl mx-auto">
+          <p className="mt-4 text-center text-[#444] text-base sm:text-lg md:text-[18px] max-w-4xl mx-auto">
             Powerful tools that help you design stunning invitations and
             greetings faster, smarter, and effortlessly.
           </p>
@@ -59,7 +61,7 @@ export default function Features() {
                     </div>
                   </div>
 
-                  <p className="text-[#1e1e1e] text-center p-4 md:p-10 text-[16px] md:text-[17px] leading-relaxed">
+                  <p className="text-[#1e1e1e] text-center p-4 md:p-10 text-[16px] md:text-[18px] leading-relaxed">
                     {f.desc}
                   </p>
                 </div>
