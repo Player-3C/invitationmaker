@@ -23,7 +23,7 @@ export default function Contact() {
           </h2>
 
           {/* DESCRIPTION */}
-          <p className="mt-3 sm:mt-4 text-[#1e1e1e] text-[15px] sm:text-[16px] md:text-[18px] max-w-full sm:max-w-md">
+          <p className="mt-3 sm:mt-4 text-[#1e1e1e] text-[15px] sm:text-[16px] md:text-[18px] max-w-full ">
             We are committed to processing the information in order to contact
             you and talk about your project.
           </p>

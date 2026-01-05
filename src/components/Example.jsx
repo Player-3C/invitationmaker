@@ -21,7 +21,9 @@ export default function Apps() {
     const centerItem = centerRef.current;
 
     const scrollLeft =
-      centerItem.offsetLeft - container.clientWidth / 1.8 + centerItem.clientWidth / 2;
+      centerItem.offsetLeft -
+      container.clientWidth / 1.8 +
+      centerItem.clientWidth / 2;
 
     container.scrollTo({ left: scrollLeft, behavior: "smooth" });
   };
@@ -72,58 +74,57 @@ export default function Apps() {
 
           {/* Scroll container */}
           {/* Scroll container */}
-<div
-  ref={scrollRef}
-  className="mt-8 md:mt-16 flex items-center gap-6 
+          <div
+            ref={scrollRef}
+            className="mt-8 md:mt-16 flex items-center gap-6 
              overflow-x-scroll md:overflow-x-visible 
              whitespace-nowrap md:whitespace-normal 
              touch-pan-x scrollbar-hide
              md:justify-center" // <-- add this line
->
-  <Image
-    src="/images/app-card-1.png"
-    alt="AI Invitation Card Maker"
-    width={170}
-    height={420}
-    className="shrink-0"
-  />
+          >
+            <Image
+              src="/images/app-card-1.png"
+              alt="AI Invitation Card Maker"
+              width={170}
+              height={420}
+              className="shrink-0"
+            />
 
-  <Image
-    src="/images/app-card-2.png"
-    alt="Decorate Invitation Cards"
-    width={210}
-    height={420}
-    className="shrink-0"
-  />
+            <Image
+              src="/images/app-card-2.png"
+              alt="Decorate Invitation Cards"
+              width={210}
+              height={420}
+              className="shrink-0"
+            />
 
-  {/* Center Card */}
-  <div ref={centerRef} className="shrink-0">
-    <Image
-      src="/images/app-card-center.png"
-      alt="Auto Save and Share"
-      width={240}
-      height={500}
-      onLoad={scrollToCenter} // scroll only after image loads
-    />
-  </div>
+            {/* Center Card */}
+            <div ref={centerRef} className="shrink-0">
+              <Image
+                src="/images/app-card-center.png"
+                alt="Auto Save and Share"
+                width={240}
+                height={500}
+                onLoad={scrollToCenter} // scroll only after image loads
+              />
+            </div>
 
-  <Image
-    src="/images/app-card-4.png"
-    alt="Birthday Card & Invitation"
-    width={210}
-    height={420}
-    className="shrink-0"
-  />
+            <Image
+              src="/images/app-card-4.png"
+              alt="Birthday Card & Invitation"
+              width={210}
+              height={420}
+              className="shrink-0"
+            />
 
-  <Image
-    src="/images/app-card-5.png"
-    alt="Eid Card & Invitation"
-    width={170}
-    height={420}
-    className="shrink-0"
-  />
-</div>
-
+            <Image
+              src="/images/app-card-5.png"
+              alt="Eid Card & Invitation"
+              width={170}
+              height={420}
+              className="shrink-0"
+            />
+          </div>
         </div>
       </section>
     </div>

@@ -80,14 +80,14 @@ export default function Apps() {
              overflow-x-scroll md:overflow-x-visible 
              whitespace-nowrap md:whitespace-normal 
              touch-pan-x scrollbar-hide
-             md:justify-center" // <-- add this line
+             md:justify-center"
           >
             <Image
               src="/images/app-card-1.png"
               alt="AI Invitation Card Maker"
               width={170}
               height={420}
-              className="shrink-0"
+              className="shrink-0 w-[220px]"
             />
 
             <Image
@@ -95,7 +95,7 @@ export default function Apps() {
               alt="Decorate Invitation Cards"
               width={210}
               height={420}
-              className="shrink-0"
+              className="shrink-0 w-[270px]"
             />
 
             {/* Center Card */}
@@ -106,6 +106,7 @@ export default function Apps() {
                 width={240}
                 height={500}
                 onLoad={scrollToCenter} // scroll only after image loads
+                className=" w-[320px]"
               />
             </div>
 
@@ -114,7 +115,7 @@ export default function Apps() {
               alt="Birthday Card & Invitation"
               width={210}
               height={420}
-              className="shrink-0"
+              className="shrink-0 w-[270px]"
             />
 
             <Image
@@ -122,7 +123,7 @@ export default function Apps() {
               alt="Eid Card & Invitation"
               width={170}
               height={420}
-              className="shrink-0"
+              className="shrink-0 w-[220px]"
             />
           </div>
         </div>

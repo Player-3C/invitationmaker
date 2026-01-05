@@ -93,7 +93,7 @@ export default function Testimonials() {
             onPointerUp={handlePointerUp}
             className="flex transition-transform duration-500 ease-out cursor-grab active:cursor-grabbing"
             style={{
-              transform: `translateX(-${active * 100}%)`,
+              transform: `translateX(-${active * (100 / perView)}%)`,
             }}
           >
             {reviews.map((r, i) => (
