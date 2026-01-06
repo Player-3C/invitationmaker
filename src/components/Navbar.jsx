@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <header className="w-full bg-gradient-to-r from-[#EED3FF] via-[#F5D9FF] to-[#FFD9E2] shadow-[0_10px_30px_0_rgba(0,0,0,0.12)]">
-      <nav className="MyContainer flex items-center justify-between gap-25 h-[12vh] md:h-[12vh] relative">
+      <nav className="MyContainer flex items-center justify-between md:gap-10 lg:gap-25 h-[12vh] md:h-[12vh] relative">
         {/* Logo */}
         <div className="flex items-center gap-3">
           <Image
@@ -17,16 +17,13 @@ export default function Navbar() {
             alt="Logo"
             width={50}
             height={50}
-            className="h-[40px] w-[250px] md:h-[40px] md:w-[50px] lg:h-[9vh] lg:w-[11vh]"
+            className="h-[40px] w-[50px] md:h-[40px] md:w-[50px] lg:h-[9vh] lg:w-[11vh]"
           />
-          {/* <h2 className="hidden md:block font-bold bg-gradient-to-r from-[#7A00FF] to-[#FF6B81] bg-clip-text text-transparent text-[22px] whitespace-nowrap">
-            Invitation Maker
-          </h2> */}
         </div>
 
         {/* Desktop Menu */}
         <div className="flex items-center justify-center w-full">
-          <ul className="hidden md:flex items-center gap-20 text-[18px] font-semibold text-gray-900">
+          <ul className="hidden md:flex items-center md:gap-8 lg:gap-20 text-[18px] font-semibold text-gray-900">
             {menuItems.map((item) => (
               <li key={item}>
                 <a

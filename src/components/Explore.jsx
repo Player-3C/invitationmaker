@@ -2,21 +2,10 @@ import Image from "next/image";
 
 export default function Explore() {
   return (
-    <div id="explore" className="bg-[#fdf3fc] py-10 md:py-20">
+    <div id="explore" className="bg-[#fdf3fc] py-10 md:py-14">
       <section>
         <div className="MyContainer grid gap-1 md:gap-3">
-
-          {/* <div className="flex justify-center mb-4">
-            <div className="p-[1.5px] rounded-full bg-gradient-to-r from-[#A100FF] to-[#FF6B81]">
-              <span className="block px-4 py-1 text-sm rounded-full bg-[#F6D9FF] text-[#A100FF] font-medium">
-                Simple Process
-              </span>
-            </div>
-          </div> */}
-
-          <h2 className="text-center">
-            How Invitation Maker Works
-          </h2>
+          <h2 className="text-center">How Invitation Maker Works</h2>
 
           <p className="mt-4 text-center max-w-4xl mx-auto">
             Transform your vision into stunning invitations with our AI-powered
@@ -24,7 +13,7 @@ export default function Explore() {
           </p>
 
           {/* Step 1 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 pt-10 md:pt-0 gap-1 md:gap-12 items-center w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 pt-6 md:pt-0 gap-1 md:gap-12 items-center w-full">
             <div className="flex flex-col justify-center gap-5 items-center md:items-start order-1">
               <div className="p-[1.5px] rounded-full bg-gradient-to-r from-[#7A00FF] to-[#FF6B81]">
                 <span className="block px-4 py-1 text-sm rounded-full bg-gradient-to-r from-[#7A00FF] to-[#FF6B81] text-white font-medium">
@@ -44,25 +33,27 @@ export default function Explore() {
               </span>
             </div>
 
-            <div className="relative w-full h-[300px] md:h-[450px] lg:h-[600px] order-2 md:order-2">
+            <div className="order-2 md:order-2">
               <Image
                 src="/images/explore1.png"
                 alt="Invitation Maker"
-                fill
-                className="object-contain"
+                width={800}
+                height={500}
+                className="w-full h-full"
                 priority
               />
             </div>
           </div>
 
           {/* Step 2 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 pt-10 md:pt-0 gap-1 md:gap-12 items-center w-full">
-            <div className="relative w-full h-[300px] md:h-[450px] lg:h-[600px] order-2 md:order-1 mt-5 md:mt-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 pt-6 md:pt-0 gap-1 md:gap-12 items-center w-full">
+            <div className="order-2 md:order-1 mt-5 md:mt-0">
               <Image
                 src="/images/explore2.png"
                 alt="Invitation Maker"
-                fill
-                className="object-contain"
+                width={800}
+                height={500}
+                className="w-full h-full"
                 priority
               />
             </div>
@@ -88,13 +79,15 @@ export default function Explore() {
           </div>
 
           {/* Step 3 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 pt-10 md:pt-0 gap-1 md:gap-12 items-center w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 pt-6 md:pt-0 gap-1 md:gap-12 items-center w-full">
+            {/* LEFT CONTENT */}
             <div className="flex flex-col justify-center gap-5 items-center md:items-start order-1">
               <div className="p-[1.5px] rounded-full bg-gradient-to-r from-[#7A00FF] to-[#FF6B81]">
                 <span className="block px-4 py-1 text-sm rounded-full bg-gradient-to-r from-[#7A00FF] to-[#FF6B81] text-white font-medium">
                   Step 3
                 </span>
               </div>
+
               <h3 className="text-[24px] text-center md:text-left md:text-[30px] font-semibold leading-tight text-black">
                 Choose Your Style
               </h3>
@@ -102,31 +95,34 @@ export default function Explore() {
               <span className="text-[#1e1e1e] text-[16px] md:text-[18px] lg:text-[22px] text-center md:text-left">
                 Choose the style for your card from the wide variety of trendy,
                 minimal, traditional, and other design styles that match your
-                vision anf customize the look of your invitation card in just a
+                vision and customize the look of your invitation card in just a
                 tap. From timeless classics to stylish modern themes, every
                 invitation is designed to make your moment unforgettable.
               </span>
             </div>
 
-            <div className="relative w-full h-[300px] md:h-[450px] lg:h-[600px] order-2 md:order-2">
+            {/* RIGHT IMAGE */}
+            <div className="order-2 md:order-2">
               <Image
                 src="/images/explore3.png"
                 alt="Invitation Maker"
-                fill
-                className="object-contain"
+                width={800}
+                height={500}
+                className="w-full h-full"
                 priority
               />
             </div>
           </div>
 
           {/* Step 4 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 pt-10 md:pt-0 gap-1 md:gap-12 items-center w-full">
-            <div className="relative w-full h-[300px] md:h-[450px] lg:h-[600px] order-2 md:order-1">
+          <div className="grid grid-cols-1 md:grid-cols-2 pt-6 md:pt-0 gap-1 md:gap-12 items-center w-full">
+            <div className="order-2 md:order-1">
               <Image
                 src="/images/explore4.png"
                 alt="Invitation Maker"
-                fill
-                className="object-contain"
+                width={800}
+                height={500}
+                className="w-full h-full"
                 priority
               />
             </div>
@@ -152,7 +148,7 @@ export default function Explore() {
           </div>
 
           {/* Step 5 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 pt-10 md:pt-0 gap-1 md:gap-12 items-center w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 pt-6 md:pt-0 gap-1 md:gap-12 items-center w-full">
             <div className="flex flex-col justify-center gap-5 items-center md:items-start order-1">
               <div className="p-[1.5px] rounded-full bg-gradient-to-r from-[#7A00FF] to-[#FF6B81]">
                 <span className="block px-4 py-1 text-sm rounded-full bg-gradient-to-r from-[#7A00FF] to-[#FF6B81] text-white font-medium">
@@ -172,25 +168,27 @@ export default function Explore() {
               </span>
             </div>
 
-            <div className="relative w-full h-[300px] md:h-[450px] lg:h-[600px] order-2 md:order-2">
+            <div className="order-2 md:order-2">
               <Image
                 src="/images/explore5.png"
                 alt="Invitation Maker"
-                fill
-                className="object-contain"
+                width={800}
+                height={500}
+                className="w-full h-full"
                 priority
               />
             </div>
           </div>
 
           {/* Step 6 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 pt-10 md:pt-0 gap-1 md:gap-12 items-center w-full">
-            <div className="relative w-full h-[300px] md:h-[450px] lg:h-[600px] order-2 md:order-1 mt-5 md:mt-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 pt-6 md:pt-0 gap-1 md:gap-12 items-center w-full">
+            <div className=" order-2 md:order-1 mt-5 md:mt-0">
               <Image
                 src="/images/explore6.png"
                 alt="Invitation Maker"
-                fill
-                className="object-contain"
+                width={800}
+                height={500}
+                className="w-full h-full"
                 priority
               />
             </div>

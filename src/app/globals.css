@@ -34,7 +34,7 @@ body {
 
 
 h1 {
-  @apply text-[36px] md:text-[42px] lg:text-[75px] font-extrabold leading-tight text-black;
+  @apply text-[36px] md:text-[42px] lg:text-[75px] font-extrabold leading-none text-black;
 }
 
 h2 {
@@ -42,7 +42,7 @@ h2 {
 }
 
 h3 {
-  @apply text-[24px] md:text-[28px] lg:text-[30px] font-semibold leading-tight text-black;
+  @apply text-[24px] md:text-[26px] lg:text-[28px] font-semibold leading-tight text-black;
 }
 
 p {

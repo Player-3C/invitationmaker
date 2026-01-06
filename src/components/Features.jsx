@@ -15,7 +15,7 @@ const features = [
 
 export default function Features() {
   return (
-    <div id="features" className="bg-white py-10 md:py-20">
+    <div id="features" className="bg-white py-10 md:py-16">
       <section>
         <div className="MyContainer grid gap-1 md:gap-3">
 
@@ -49,9 +49,9 @@ export default function Features() {
                   <div className="w-full">
                     <div className="p-[1.5px] rounded-full bg-gradient-to-r from-[#A100FF] to-[#FF6B81] w-full">
                       <div className="flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#F1D5FF] to-[#FFD9E2] py-3 px-6 w-full">
-                        <h4 className="text-black text-[18px] md:text-[24px] font-bold text-center">
+                        <h3 className="text-center">
                           {f.title}
-                        </h4>
+                        </h3>
                         <Image
                           src={f.img}
                           alt={f.title}
