@@ -53,9 +53,9 @@ export default function Gallery() {
 /* Card */
 function Card({ src, size }) {
   const heights = {
-    tall: "h-[600px]",
-    medium: "h-[510px]",
-    small: "h-[390px]",
+    tall: "h-[650px]",
+    medium: "h-[570px]",
+    small: "h-[490px]",
   };
 
   return (
@@ -63,7 +63,7 @@ function Card({ src, size }) {
       className={`relative w-full overflow-hidden rounded-[26px]
       bg-[#fdf3fc] ${heights[size]}`}
     >
-      <Image src={src} alt="AI Card" fill className="object-center" />
+      <Image src={src} alt="AI Card" fill className="object-" />
     </div>
   );
 }
