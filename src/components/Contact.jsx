@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Contact() {
   return (
-    <section id="contactus" className="bg-white py-10 md:py-16">
+    <section id="contactus" className="bg-white py-10 md:pb-10 lg:py-16">
       <div className="MyContainer grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-20 items-start">
         {/* RIGHT CONTENT */}
         <div className="order-1 lg:order-2 lg:pl-16 lg:max-w-lg">

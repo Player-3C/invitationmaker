@@ -65,7 +65,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="bg-white py-10 md:py-16">
+    <section className="bg-white py-10 md:py-1 lg:py-16">
       <div className="MyContainer">
 
         {/* Title */}
@@ -91,7 +91,7 @@ export default function Testimonials() {
             {reviews.map((r, i) => (
               <div key={i} className="w-full md:w-1/3 px-2 shrink-0">
                 <div className="h-full rounded-[26px] p-[1.5px] bg-gradient-to-br from-[#A100FF] to-[#FF6B81]">
-                  <div className="relative h-full rounded-[24px] bg-gradient-to-r from-[#faf3ff] via-[#fbf1ff] to-[#fff3f6] p-10">
+                  <div className="relative h-full rounded-[24px] bg-gradient-to-r from-[#faf3ff] via-[#fbf1ff] to-[#fff3f6] p-10 md:p-8 lg:p-10">
                     <Image
                       src="/images/quote.png"
                       alt="quote"

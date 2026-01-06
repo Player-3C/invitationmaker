@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Gallery() {
   return (
-    <section className="bg-white py-10 md:py-20">
+    <section className="bg-white py-10 md:py-10 lg:py-20">
       <div className="MyContainer">
         {/* Heading */}
         <h2 className="text-center">

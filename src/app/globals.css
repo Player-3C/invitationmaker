@@ -34,7 +34,7 @@ body {
 
 
 h1 {
-  @apply text-[36px] md:text-[42px] lg:text-[75px] font-extrabold leading-none text-black;
+  @apply text-[36px] md:text-[38px] lg:text-[75px] font-extrabold leading-none text-black;
 }
 
 h2 {
