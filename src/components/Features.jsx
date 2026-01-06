@@ -15,10 +15,11 @@ const features = [
 
 export default function Features() {
   return (
-    <div id="features" className="bg-white py-10 md:pt-10 md:pb-20">
+    <div id="features" className="bg-white py-10 md:py-20">
       <section>
         <div className="MyContainer grid gap-1 md:gap-3">
-          <div className="flex justify-center mb-4">
+
+          {/* <div className="flex justify-center mb-4">
             <div className="p-[1.5px] rounded-full bg-gradient-to-r from-[#A100FF] to-[#FF6B81]">
               <span className="block px-4 py-1 text-sm rounded-full bg-[#F6D9FF] font-medium">
                 <span className="bg-gradient-to-r from-[#7A00FF] to-[#FF6B81] bg-clip-text text-transparent">
@@ -26,13 +27,13 @@ export default function Features() {
                 </span>
               </span>
             </div>
-          </div>
+          </div> */}
 
-          <h2 className="text-3xl sm:text-4xl md:text-[42px] font-extrabold text-center text-black">
+          <h2 className="text-center">
             Advanced Features
           </h2>
 
-          <p className="mt-4 text-center text-[#444] text-base sm:text-lg md:text-[18px] max-w-4xl mx-auto">
+          <p className="mt-4 text-center max-w-4xl mx-auto">
             Powerful tools that help you design stunning invitations and
             greetings faster, smarter, and effortlessly.
           </p>
@@ -40,7 +41,7 @@ export default function Features() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-6 md:pt-14 items-stretch">
             {features.map((f) => (
               <div
-                key={f.title} // using title as key since ids removed
+                key={f.title}
                 className="p-[2px] rounded-[37px] bg-gradient-to-r from-[#A100FF] to-[#FF6B81] shadow-lg"
               >
                 <div className="h-full rounded-[35px] bg-[#fdf3fc] px-3 py-3 shadow-[0_10px_40px_rgba(0,0,0,0.15)] flex flex-col justify-between">
@@ -48,9 +49,9 @@ export default function Features() {
                   <div className="w-full">
                     <div className="p-[1.5px] rounded-full bg-gradient-to-r from-[#A100FF] to-[#FF6B81] w-full">
                       <div className="flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#F1D5FF] to-[#FFD9E2] py-3 px-6 w-full">
-                        <h3 className="text-black text-[18px] md:text-[20px] font-bold text-center flex-1">
+                        <h4 className="text-black text-[18px] md:text-[24px] font-bold text-center">
                           {f.title}
-                        </h3>
+                        </h4>
                         <Image
                           src={f.img}
                           alt={f.title}
@@ -61,9 +62,9 @@ export default function Features() {
                     </div>
                   </div>
 
-                  <p className="text-[#1e1e1e] text-center p-4 md:p-10 text-[16px] md:text-[18px] leading-relaxed">
+                  <span className="text-[#6B6B6B] text-center p-4 md:px-6 md:py-10 lg:px-25 lg:py-14 text-[16px] md:text-[20px] lg:text-[22px] leading-relaxed">
                     {f.desc}
-                  </p>
+                  </span>
                 </div>
               </div>
             ))}

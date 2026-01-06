@@ -35,21 +35,13 @@ export default function Apps() {
     <div id="app" className="bg-white py-6 md:pt-10 md:pb-10">
       <section>
         <div className="MyContainer grid gap-1 md:gap-3">
-          {/* Badge */}
-          <div className="flex justify-center mb-4">
-            <div className="p-[1.5px] rounded-full bg-gradient-to-r from-[#A100FF] to-[#FF6B81]">
-              <span className="block px-4 py-1 text-sm rounded-full bg-[#F6D9FF] text-[#A100FF] font-medium">
-                About
-              </span>
-            </div>
-          </div>
 
           {/* Title */}
-          <h2 className="text-3xl sm:text-4xl md:text-[42px] font-extrabold text-center text-black">
+          <h2 className="text-center">
             Discover Everything in Invitation Maker
           </h2>
 
-          <p className="mt-4 text-center text-[#444] text-base sm:text-lg md:text-[18px] max-w-3xl mx-auto">
+          <p className="mt-4 text-center mx-auto">
             Explore beautiful invitation and greeting designs and creative ideas
             that spark inspiration and bring every occasion story to life.
           </p>
@@ -57,30 +49,29 @@ export default function Apps() {
           {/* Store buttons */}
           <div className="flex flex-col sm:flex-row items-center gap-4 mt-4 mx-auto w-fit">
             <Image
-              src="/images/appstore.png"
+              src="/images/googleplays.png"
+              alt="Get it on Google Play"
+              width={190}
+              height={40}
+              className="w-[150px] md:w-[170px]"
+            />
+            <Image
+              src="/images/appstores.png"
               alt="Download on the App Store"
               width={180}
               height={40}
               className="w-[150px] md:w-[180px]"
             />
-            <Image
-              src="/images/googleplay.png"
-              alt="Get it on Google Play"
-              width={190}
-              height={40}
-              className="w-[150px] md:w-[190px]"
-            />
           </div>
 
           {/* Scroll container */}
-          {/* Scroll container */}
           <div
             ref={scrollRef}
-            className="mt-8 md:mt-16 flex items-center gap-6 
-             overflow-x-scroll md:overflow-x-visible 
-             whitespace-nowrap md:whitespace-normal 
+            className="mt-8 md:mt-16 flex items-center gap-10 
+             overflow-x-scroll md:overflow-x-scroll lg:overflow-x-visible
+             whitespace-nowrap md:whitespace-nowrap lg:whitespace-normal 
              touch-pan-x scrollbar-hide
-             md:justify-center"
+             lg:justify-center"
           >
             <Image
               src="/images/app-card-1.png"

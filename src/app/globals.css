@@ -33,3 +33,29 @@ body {
 }
 
 
+h1 {
+  @apply text-[36px] md:text-[42px] lg:text-[75px] font-extrabold leading-tight text-black;
+}
+
+h2 {
+  @apply text-[30px] md:text-[36px] lg:text-[42px] font-extrabold leading-tight text-black;
+}
+
+h3 {
+  @apply text-[24px] md:text-[28px] lg:text-[30px] font-semibold leading-tight text-black;
+}
+
+p {
+  @apply text-[16px] md:text-[18px] lg:text-[24px] text-[#1e1e1e];
+}
+
+
+
+
+.txt-gradient {
+  @apply bg-gradient-to-r from-[#7A00FF] to-[#FF6B81] bg-clip-text text-transparent;
+}
+
+.btn-gradient {
+  @apply bg-gradient-to-r from-[#7A00FF] to-[#FF6B81];
+}

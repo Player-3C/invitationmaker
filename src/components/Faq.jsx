@@ -7,7 +7,7 @@ const faqs = [
   {
     question: "What is the Invitation Maker?",
     answer:
-      "Invitation Maker is an online design tool that helps you create beautiful invitation cards for weddings, birthdays, parties, and events using ready-made templates and easy customization options.",
+      "Invitation Maker use advanced artificial intelligence to create perfect invites based on personal details and preferences.",
   },
   {
     question: "Can I customize invitation cards?",
@@ -27,7 +27,8 @@ const faqs = [
 ];
 
 export default function Faq() {
-  const [openIndex, setOpenIndex] = useState(null);
+  // Set first FAQ open by default
+  const [openIndex, setOpenIndex] = useState(0);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
@@ -35,24 +36,14 @@ export default function Faq() {
 
   return (
     <section className="bg-white py-6 md:py-16">
-      <div className="MyContainer grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-14 items-center">
+      <div className="MyContainer grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-14">
         {/* LEFT CONTENT */}
-        <div className="text-center md:text-left">
-          <div className="inline-flex mb-3 md:mb-6">
-            <div className="p-[1.5px] rounded-full bg-gradient-to-r from-[#A100FF] to-[#FF6B81]">
-              <span className="block px-3 sm:px-4 py-1 text-xs sm:text-sm md:text-sm rounded-full bg-gradient-to-r from-[#f8edff] via-[#fbf1ff] to-[#fff1f5] text-[#A100FF] font-medium">
-                FAQ’s
-              </span>
-            </div>
-          </div>
-
-          <h2 className="text-[28px] sm:text-[32px] md:text-[42px] font-extrabold leading-snug sm:leading-tight md:leading-tight text-black">
-            Frequent Asked
-            <br />
-            Questions
+        <div className="text-center md:text-left md:pt-10">
+          <h2>
+            Frequent Asked Questions
           </h2>
 
-          <p className="mt-2 sm:mt-4 text-[#1e1e1e] text-[14px] sm:text-[15px] md:text-[16px] md:text-[18px] leading-relaxed max-w-full md:max-w-md mx-auto md:mx-0">
+          <p className="mt-2 sm:mt-4 leading-relaxed md:tracking-wide max-w-lg mx-auto md:mx-0">
             Find quick answers to questions about creating, customizing, and
             downloading invitations. Our FAQs help you get the most out of the
             invitation maker.
@@ -100,9 +91,9 @@ export default function Faq() {
                     maxHeight: isOpen ? "200px" : "0px",
                   }}
                 >
-                  <p className="text-[#6B6B6B] text-[14px] sm:text-[15px] md:text-[16px] leading-relaxed">
+                  <span className="text-[#1e1e1e] text-[14px] sm:text-[16px] md:text-[18px] leading-relaxed">
                     {faq.answer}
-                  </p>
+                  </span>
                 </div>
               </div>
             );

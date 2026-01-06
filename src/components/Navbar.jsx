@@ -15,9 +15,9 @@ export default function Navbar() {
           <Image
             src="/images/logo.png"
             alt="Logo"
-            width={100}
-            height={100}
-            className="h-[9vh] w-[11vh]"
+            width={50}
+            height={50}
+            className="h-[40px] w-[250px] md:h-[40px] md:w-[50px] lg:h-[9vh] lg:w-[11vh]"
           />
           {/* <h2 className="hidden md:block font-bold bg-gradient-to-r from-[#7A00FF] to-[#FF6B81] bg-clip-text text-transparent text-[22px] whitespace-nowrap">
             Invitation Maker

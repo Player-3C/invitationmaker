@@ -5,19 +5,20 @@ export default function Explore() {
     <div id="explore" className="bg-[#fdf3fc] py-10 md:py-20">
       <section>
         <div className="MyContainer grid gap-1 md:gap-3">
-          <div className="flex justify-center mb-4">
+
+          {/* <div className="flex justify-center mb-4">
             <div className="p-[1.5px] rounded-full bg-gradient-to-r from-[#A100FF] to-[#FF6B81]">
               <span className="block px-4 py-1 text-sm rounded-full bg-[#F6D9FF] text-[#A100FF] font-medium">
                 Simple Process
               </span>
             </div>
-          </div>
+          </div> */}
 
-          <h2 className="text-3xl sm:text-4xl md:text-[42px] font-extrabold text-center text-black">
+          <h2 className="text-center">
             How Invitation Maker Works
           </h2>
 
-          <p className="mt-4 text-center text-[#1e1e1e] text-base sm:text-lg md:text-[18px] max-w-4xl mx-auto">
+          <p className="mt-4 text-center max-w-4xl mx-auto">
             Transform your vision into stunning invitations with our AI-powered
             design tools in just 6 steps.
           </p>
@@ -34,16 +35,16 @@ export default function Explore() {
                 Choose Occasion Type
               </h3>
 
-              <p className="text-[#6B6B6B] text-[16px] md:text-[18px] leading-7 text-center md:text-left">
+              <span className="text-[#1e1e1e] text-[16px] md:text-[18px] lg:text-[22px] text-center md:text-left">
                 Choose the perfect occasion to get started with your invitation
                 and let AI do the rest. Every celebration begins with the right
                 occasion. Select from weddings, birthdays, anniversaries, baby
                 showers, bridal showers, and more. Our AI suggest the perfect
                 style for each occasion.
-              </p>
+              </span>
             </div>
 
-            <div className="relative w-full h-[300px] md:h-[600px] order-2 md:order-2">
+            <div className="relative w-full h-[300px] md:h-[450px] lg:h-[600px] order-2 md:order-2">
               <Image
                 src="/images/explore1.png"
                 alt="Invitation Maker"
@@ -56,7 +57,7 @@ export default function Explore() {
 
           {/* Step 2 */}
           <div className="grid grid-cols-1 md:grid-cols-2 pt-10 md:pt-0 gap-1 md:gap-12 items-center w-full">
-            <div className="relative w-full h-[300px] md:h-[600px] order-2 md:order-1 mt-5 md:mt-0">
+            <div className="relative w-full h-[300px] md:h-[450px] lg:h-[600px] order-2 md:order-1 mt-5 md:mt-0">
               <Image
                 src="/images/explore2.png"
                 alt="Invitation Maker"
@@ -76,13 +77,13 @@ export default function Explore() {
                 Upload Your Details
               </h3>
 
-              <p className="text-[#6B6B6B] text-[16px] md:text-[18px] leading-7 text-center md:text-left">
+              <span className="text-[#1e1e1e] text-[16px] md:text-[18px] lg:text-[22px] text-center md:text-left">
                 Upload the details to start designing your invitation. Enter
                 event information like names, date, time, location, and
                 messages, and we’ll seamlessly place everything into a designed
                 card. Invitation Maker generate invitation and greeting cards
                 based on your choice and preferences.
-              </p>
+              </span>
             </div>
           </div>
 
@@ -98,16 +99,16 @@ export default function Explore() {
                 Choose Your Style
               </h3>
 
-              <p className="text-[#6B6B6B] text-[16px] md:text-[18px] leading-7 text-center md:text-left">
+              <span className="text-[#1e1e1e] text-[16px] md:text-[18px] lg:text-[22px] text-center md:text-left">
                 Choose the style for your card from the wide variety of trendy,
                 minimal, traditional, and other design styles that match your
                 vision anf customize the look of your invitation card in just a
                 tap. From timeless classics to stylish modern themes, every
                 invitation is designed to make your moment unforgettable.
-              </p>
+              </span>
             </div>
 
-            <div className="relative w-full h-[300px] md:h-[600px] order-2 md:order-2">
+            <div className="relative w-full h-[300px] md:h-[450px] lg:h-[600px] order-2 md:order-2">
               <Image
                 src="/images/explore3.png"
                 alt="Invitation Maker"
@@ -120,7 +121,7 @@ export default function Explore() {
 
           {/* Step 4 */}
           <div className="grid grid-cols-1 md:grid-cols-2 pt-10 md:pt-0 gap-1 md:gap-12 items-center w-full">
-            <div className="relative w-full h-[300px] md:h-[600px] order-2 md:order-1">
+            <div className="relative w-full h-[300px] md:h-[450px] lg:h-[600px] order-2 md:order-1">
               <Image
                 src="/images/explore4.png"
                 alt="Invitation Maker"
@@ -140,13 +141,13 @@ export default function Explore() {
                 Choose A Size
               </h3>
 
-              <p className="text-[#6B6B6B] text-[16px] md:text-[18px] leading-7 text-center md:text-left">
+              <span className="text-[#1e1e1e] text-[16px] md:text-[18px] lg:text-[22px] text-center md:text-left">
                 Choose the size of your card that suit your needs or fits your
                 invitation style and platform to look perfect. Select from
                 multiple formats to ensure yor invitation card looks great
                 everywhere. Every detail is optimized to maintain clarity,
                 balance, and design quality.{" "}
-              </p>
+              </span>
             </div>
           </div>
 
@@ -162,16 +163,16 @@ export default function Explore() {
                 Pick a Color Palette
               </h3>
 
-              <p className="text-[#6B6B6B] text-[16px] md:text-[18px] leading-7 text-center md:text-left">
+              <span className="text-[#1e1e1e] text-[16px] md:text-[18px] lg:text-[22px] text-center md:text-left">
                 Explore beautiful color combinations and let the AI to select
                 the perfect colors based on your theme and preferences. Create
                 harmony and visual appeal instantly. From soft pastels to bold
                 and vibrant tones, find the perfect colors to express your theme
                 and personality.{" "}
-              </p>
+              </span>
             </div>
 
-            <div className="relative w-full h-[300px] md:h-[600px] order-2 md:order-2">
+            <div className="relative w-full h-[300px] md:h-[450px] lg:h-[600px] order-2 md:order-2">
               <Image
                 src="/images/explore5.png"
                 alt="Invitation Maker"
@@ -184,7 +185,7 @@ export default function Explore() {
 
           {/* Step 6 */}
           <div className="grid grid-cols-1 md:grid-cols-2 pt-10 md:pt-0 gap-1 md:gap-12 items-center w-full">
-            <div className="relative w-full h-[300px] md:h-[600px] order-2 md:order-1 mt-5 md:mt-0">
+            <div className="relative w-full h-[300px] md:h-[450px] lg:h-[600px] order-2 md:order-1 mt-5 md:mt-0">
               <Image
                 src="/images/explore6.png"
                 alt="Invitation Maker"
@@ -204,12 +205,12 @@ export default function Explore() {
                 Preview & Download
               </h3>
 
-              <p className="text-[#6B6B6B] text-[16px] md:text-[18px] leading-7 text-center md:text-left">
+              <span className="text-[#1e1e1e] text-[16px] md:text-[18px] lg:text-[22px] text-center md:text-left">
                 See your invitation or greeting come to life with real time
                 preview. Once you satisfied, download it instantly in
                 high-quality formats, ready to share directly via email and
                 social media.{" "}
-              </p>
+              </span>
             </div>
           </div>
         </div>

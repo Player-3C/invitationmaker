@@ -7,15 +7,7 @@ export default function Contact() {
     <section id="contactus" className="bg-white py-10 md:py-16">
       <div className="MyContainer grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-20 items-start">
         {/* RIGHT CONTENT */}
-        <div className="order-1 lg:order-2">
-          {/* GRADIENT BADGE */}
-          <div className="inline-flex mb-4 sm:mb-6">
-            <div className="p-[1.5px] rounded-full bg-gradient-to-r from-[#A100FF] to-[#FF6B81]">
-              <span className="block px-3 sm:px-4 py-1 text-xs sm:text-sm md:text-sm rounded-full bg-gradient-to-r from-[#f8edff] via-[#fbf1ff] to-[#fff1f5] text-[#A100FF] font-medium">
-                Contact
-              </span>
-            </div>
-          </div>
+        <div className="order-1 lg:order-2 lg:pl-16 lg:max-w-lg">
 
           {/* HEADING */}
           <h2 className="text-3xl sm:text-4xl md:text-[44px] font-extrabold text-black">
@@ -37,8 +29,8 @@ export default function Contact() {
                 width={20}
                 height={20}
               />
-              <span className="max-w-full sm:max-w-sm text-[16px] md:text-[18px]">
-                hello@devsrank.com
+              <span className="max-w-full sm:max-w-sm text-[16px] md:text-[20px]">
+                akash@devsrank.com
               </span>
             </div>
 
@@ -49,7 +41,7 @@ export default function Contact() {
                 width={22}
                 height={22}
               />
-              <span className="max-w-full sm:max-w-lg text-[16px] md:text-[18px]">
+              <span className="max-w-full sm:max-w-lg text-[16px] md:text-[20px]">
                 Office #112, 2nd Floor Kohinoor Plaza 1, Faisalabad, Punjab,
                 Pakistan
               </span>
@@ -62,7 +54,7 @@ export default function Contact() {
                 width={20}
                 height={20}
               />
-              <span className="max-w-full sm:max-w-sm text-[16px] md:text-[18px]">
+              <span className="max-w-full sm:max-w-sm text-[16px] md:text-[20px]">
                 +92 (300) 1234 968
               </span>
             </div>
@@ -91,7 +83,7 @@ function Input({ placeholder }) {
   return (
     <input
       placeholder={placeholder}
-      className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-[35px] bg-gradient-to-r from-[#f8edff] via-[#fbf1ff] to-[#fff1f5] text-[#606267] focus:outline-none"
+      className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-[35px] bg-gradient-to-r from-[#f8edff] via-[#fbf1ff] to-[#fff1f5] text-[#585757] focus:outline-none"
     />
   );
 }
@@ -100,7 +92,7 @@ function Textarea({ placeholder }) {
   return (
     <textarea
       placeholder={placeholder}
-      className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-[35px] bg-gradient-to-r from-[#f8edff] via-[#fbf1ff] to-[#fff1f5] text-[#606267] focus:outline-none resize-none h-32 sm:h-36"
+      className="w-full px-4 sm:px-6 py-3 sm:py-4 rounded-[35px] bg-gradient-to-r from-[#f8edff] via-[#fbf1ff] to-[#fff1f5] text-[#585757] focus:outline-none resize-none h-32 sm:h-36"
     />
   );
 }

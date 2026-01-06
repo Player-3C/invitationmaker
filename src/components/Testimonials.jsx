@@ -6,23 +6,23 @@ import Image from "next/image";
 const reviews = [
   {
     name: "John Cena",
-    text: "Invitation Maker completely changed how I design my invites! It gives amazing results in seconds.",
+    text: "“Invitation Maker completely changed how I design my invites! I just start using it, and within seconds, it gave me amazing invitation ideas.”",
   },
   {
     name: "Emma Watson",
-    text: "I loved how easy and clean everything feels. Perfect for beginners.",
+    text: "“Using Invitation Maker made creating invites so easy! I just entered my details, and instantly, I got beautiful designs ready to use.”",
   },
   {
     name: "Alex Carter",
-    text: "Beautiful templates and very smooth experience. Highly recommended.",
+    text: "“I love how fast Invitation Maker works! In moments, I had unique invitation templates that perfectly fit my event.”",
   },
   {
     name: "Sarah Khan",
-    text: "Everything looks premium. I shared my invitation in minutes.",
+    text: "“Invitation Maker is a game-changer! I added my preferences, and within seconds, it produced stunning invitations I could share immediately.”",
   },
   {
     name: "Michael Brown",
-    text: "Fast, simple, and professional results every time.",
+    text: "“Creating invites has never been simpler! I just started, and Invitation Maker instantly suggested gorgeous designs that I loved.”",
   },
 ];
 
@@ -67,26 +67,18 @@ export default function Testimonials() {
   return (
     <section className="bg-white py-10 md:py-16">
       <div className="MyContainer">
-        {/* Badge */}
-        <div className="flex justify-center mb-3 md:mb-5">
-          <div className="p-[1.5px] rounded-full bg-gradient-to-r from-[#A100FF] to-[#FF6B81]">
-            <span className="block px-4 py-1 text-sm rounded-full bg-[#F6D9FF] text-[#A100FF] font-medium">
-              Reviews
-            </span>
-          </div>
-        </div>
 
         {/* Title */}
-        <h2 className="text-center text-[36px] md:text-[42px] font-bold md:font-extrabold text-black">
+        <h2 className="text-center">
           What People Say About Us!
         </h2>
 
-        <p className="mt-2 md:mt-4 text-center max-w-3xl mx-auto text-[#1e1e1e] text-[16px] md:text-[18px]">
+        <p className="mt-2 md:mt-4 text-center max-w-3xl mx-auto">
           Loved by users who create beautiful invitations effortlessly.
         </p>
 
         {/* Slider viewport */}
-        <div className="mt-14 overflow-hidden">
+        <div className="mt-6 md:mt-14 overflow-hidden">
           <div
             ref={sliderRef}
             onPointerDown={handlePointerDown}
@@ -103,18 +95,20 @@ export default function Testimonials() {
                     <Image
                       src="/images/quote.png"
                       alt="quote"
-                      width={42}
-                      height={42}
+                      width={35}
+                      height={35}
                       className="absolute top-8 left-6"
-                    />
+                    /><br />
 
-                    <p className="mt-12 text-[#666] text-[16px] leading-relaxed">
+                    <span className="mt-12 text-[#666] text-[16px] leading-relaxed">
                       {r.text}
-                    </p>
+                    </span><br />
 
-                    <p className="mt-6 text-center font-medium bg-gradient-to-r from-[#7A00FF] to-[#FF6B81] bg-clip-text text-transparent">
+                    <div className="flex flex-col items-center">
+                      <span className="mt-2 text-center font-medium bg-gradient-to-r from-[#7A00FF] to-[#FF6B81] bg-clip-text text-transparent">
                       {r.name}
-                    </p>
+                    </span>
+                    </div>
                   </div>
                 </div>
               </div>

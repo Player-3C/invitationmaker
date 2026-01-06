@@ -28,26 +28,26 @@ export default function Footer() {
           <div className="flex items-center md:gap-14 gap-8 md:mb-10 mb-5">
             <Link
               href=""
-              className="text-[16px] md:text-[18px] font-bold text-gray-900 hover:opacity-80 transition"
+              className="text-[16px] md:text-[20px] font-bold text-gray-900 hover:opacity-80 transition"
             >
               Privacy Policy
             </Link>
 
             <Link
               href=""
-              className="text-[16px] md:text-[18px] font-bold text-gray-900 hover:opacity-80 transition"
+              className="text-[16px] md:text-[20px] font-bold text-gray-900 hover:opacity-80 transition"
             >
               Terms & Conditions
             </Link>
           </div>
 
           {/* COPYRIGHT */}
-          <p className="text-[14px] text-gray-600 leading-relaxed">
+          <span className="text-[18px] text-black leading-relaxed">
             © 2025 Invitation Maker. Built with{" "}
             <span className="text-red-500">❤</span> by Devsrank Pvt. Ltd.
             <br />
             All rights reserved
-          </p>
+          </span>
         </div>
       </div>
     </footer>

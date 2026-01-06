@@ -7,7 +7,7 @@ export default function Hero() {
         bg-white
         flex
         items-start md:items-center
-        min-h-[100svh]
+        min-h-[88svh] md:pt-10
       "
     >
       <div className="MyContainer grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-0 items-center">
@@ -32,22 +32,22 @@ export default function Hero() {
             backgroundSize: "contain",
           }}
         >
-          <h1 className="text-[36px] text-center md:text-left md:text-[75px] font-extrabold leading-tight text-black">
+          <h1 className="text-center md:text-left">
             Create Stunning <br />
             Invites With
             <br />
-            <span className="bg-gradient-to-r from-[#7A00FF] to-[#FF6B81] bg-clip-text text-transparent">
+            <span className="txt-gradient">
               Invitation Maker
             </span>{" "}
           </h1>
 
-          <p className="mt-6 text-[#1e1e1e] text-[18px] md:text-[24px] max-w-lg leading-10 tracking-[0.02em] text-center md:text-left">
+          <p className="mt-3 md:mt-6 text-[#1e1e1e] text-[18px] md:text-[24px] max-w-lg leading-10 tracking-[0.02em] text-center md:text-left">
             Design invitations and greetings online using smart AI tools -
             beautifully customized for every occasion.
           </p>
 
-          <div className="flex justify-center md:justify-start my-8 w-full">
-            <button className="flex items-center gap-3 px-10 py-3 rounded-full text-white shadow-lg bg-gradient-to-r from-[#7A00FF] to-[#FF6B81] text-[16px] md:text-[18px] font-medium transition-transform duration-300 ease-out hover:scale-105 hover:opacity-90">
+          <div className="flex justify-center md:justify-start my-4 md:my-8 w-full">
+            <button className="btn-gradient flex items-center gap-3 px-10 py-3 rounded-full text-white shadow-lg text-[16px] md:text-[20px] font-medium transition-transform duration-300 ease-out hover:scale-105 hover:opacity-90">
               {" "}
               <Image
                 src="/images/btnstar.png"
