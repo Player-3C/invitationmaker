@@ -78,7 +78,7 @@ export default function Apps() {
               alt="AI Invitation Card Maker"
               width={170}
               height={420}
-              className="shrink-0 md:w-[170px]"
+              className="shrink-0 lg:w-[170px]"
             />
 
             <Image
@@ -86,7 +86,7 @@ export default function Apps() {
               alt="Decorate Invitation Cards"
               width={210}
               height={420}
-              className="shrink-0 md:w-[220px]"
+              className="shrink-0 lg:w-[220px]"
             />
 
             {/* Center Card */}
@@ -97,7 +97,7 @@ export default function Apps() {
                 width={240}
                 height={500}
                 onLoad={scrollToCenter} // scroll only after image loads
-                className=" md:w-[270px]"
+                className=" lg:w-[270px]"
               />
             </div>
 
@@ -106,7 +106,7 @@ export default function Apps() {
               alt="Birthday Card & Invitation"
               width={210}
               height={420}
-              className="shrink-0 md:w-[220px]"
+              className="shrink-0 lg:w-[220px]"
             />
 
             <Image
@@ -114,7 +114,7 @@ export default function Apps() {
               alt="Eid Card & Invitation"
               width={170}
               height={420}
-              className="shrink-0 md:w-[170px]"
+              className="shrink-0 lg:w-[170px]"
             />
           </div>
         </div>

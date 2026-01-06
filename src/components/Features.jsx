@@ -44,7 +44,7 @@ export default function Features() {
                 key={f.title}
                 className="p-[2px] rounded-[37px] bg-gradient-to-r from-[#A100FF] to-[#FF6B81] shadow-lg"
               >
-                <div className="h-full rounded-[35px] bg-[#fdf3fc] px-3 py-3 shadow-[0_10px_40px_rgba(0,0,0,0.15)] flex flex-col justify-between">
+                <div className="h-full rounded-[35px] bg-[#fdf3fc] px-3 py-3 md:shadow-[0_10px_40px_rgba(0,0,0,0.15)] flex flex-col justify-between">
                   {/* Full-width Card Title */}
                   <div className="w-full">
                     <div className="p-[1.5px] rounded-full bg-gradient-to-r from-[#A100FF] to-[#FF6B81] w-full">

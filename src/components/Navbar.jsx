@@ -15,15 +15,15 @@ export default function Navbar() {
           <Image
             src="/images/logo.png"
             alt="Logo"
-            width={50}
-            height={50}
-            className="h-[40px] w-[50px] md:h-[40px] md:w-[50px] lg:h-[9vh] lg:w-[11vh]"
+            width={160}
+            height={40}
+            className="w-[11vh] h-auto"
           />
         </div>
 
         {/* Desktop Menu */}
         <div className="flex items-center justify-center w-full">
-          <ul className="hidden md:flex items-center md:gap-8 lg:gap-20 text-[18px] font-semibold text-gray-900">
+          <ul className="hidden md:flex items-center md:gap-8 lg:gap-20 text-[20px] font-semibold text-gray-900">
             {menuItems.map((item) => (
               <li key={item}>
                 <a

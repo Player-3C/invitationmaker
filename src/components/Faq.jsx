@@ -69,7 +69,7 @@ export default function Faq() {
                   onClick={() =>
                     setOpenIndex(isOpen ? null : index)
                   }
-                  className="w-full flex items-center justify-between px-6 sm:px-8 py-4 sm:py-5 text-left text-black font-medium text-[15px] sm:text-[16px] md:text-[18px]"
+                  className="w-full flex items-center justify-between px-6 sm:px-8 py-4 sm:py-5 text-left text-black font-medium text-[18px] md:text-[20px]"
                 >
                   {faq.question}
                   <ChevronDown
@@ -91,7 +91,7 @@ export default function Faq() {
                     maxHeight: isOpen ? "200px" : "0px",
                   }}
                 >
-                  <span className="text-[#1e1e1e] text-[14px] sm:text-[16px] md:text-[18px] leading-relaxed">
+                  <span className="text-[#1e1e1e] text-[16px] md:text-[18px] leading-relaxed">
                     {faq.answer}
                   </span>
                 </div>

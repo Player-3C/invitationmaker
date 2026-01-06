@@ -100,12 +100,12 @@ export default function Testimonials() {
                       className="absolute top-8 left-6"
                     /><br />
 
-                    <span className="mt-12 text-[#666] text-[16px] leading-relaxed">
+                    <span className="mt-12 text-[#666] text-[16px] lg:text-[20px] leading-relaxed">
                       {r.text}
                     </span><br />
 
                     <div className="flex flex-col items-center">
-                      <span className="mt-2 text-center font-medium bg-gradient-to-r from-[#7A00FF] to-[#FF6B81] bg-clip-text text-transparent">
+                      <span className="mt-2 text-center font-medium text-[16px] lg:text-[20px] bg-gradient-to-r from-[#7A00FF] to-[#FF6B81] bg-clip-text text-transparent">
                       {r.name}
                     </span>
                     </div>
